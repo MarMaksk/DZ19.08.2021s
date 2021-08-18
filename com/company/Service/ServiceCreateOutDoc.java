@@ -14,12 +14,12 @@ public class ServiceCreateOutDoc implements Serializable {
 
     public void createDocAboutWarehouse(Warehouse warehouse) {
         new Thread(new ThreadOutputInputProductList(warehouse, true)).start();
-      //  new Thread(new ThreadOutputInputWaybillList(warehouse, true)).start();
+      //  new com.company.Thread(new ThreadOutputInputWaybillList(warehouse, true)).start();
     }
 
     public void showDoc(Warehouse warehouse) {
         new Thread(new ThreadOutputInputProductList(warehouse, false)).start();
-      //  new Thread(new ThreadOutputInputWaybillList(warehouse, false)).start();
+      //  new com.company.Thread(new ThreadOutputInputWaybillList(warehouse, false)).start();
     }
 
     public String WarehouseToTheArchive(Warehouse warehouse) {
